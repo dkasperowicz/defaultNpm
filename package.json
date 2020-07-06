@@ -1,0 +1,23 @@
+{
+	"name": "defaultNpm",
+	"version": "0.0.1",
+	"description": "Default NPM node module that has everything setup to create being creating a TypeScript node module",
+	"main": "index.js",
+	"scripts":
+	{
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository":
+	{
+		"type": "git",
+		"url": "git+https://github.com/dkasperowicz/defaultNpm.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs":
+	{
+		"url": "https://github.com/dkasperowicz/defaultNpm/issues"
+	},
+	"homepage": "https://github.com/dkasperowicz/defaultNpm#readme"
+}
