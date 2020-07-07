@@ -6,7 +6,12 @@
 		"declaration": true,
 		"outDir": "./lib",
 		"strict": true,
-		"noImplicitAny": true
+		"noImplicitAny": true,
+		"lib":
+		[
+			"es6", //Prevents working in IE11
+			"dom"
+		]
 	},
 	"include": ["src"],
 	"exclude": ["node_modules"]

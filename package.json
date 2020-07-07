@@ -3,25 +3,36 @@
 	"version": "0.0.1",
 	"description": "Default NPM node module that has everything setup to create being creating a TypeScript node module",
 	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "tsc"
+	"scripts":
+	{
+		"test": "mocha -r ts-node/register ./tests/*.ts",
+		"build": "npm run lint && npm test && tsc",
+		"lint": "eslint ./src"
 	},
-	"repository": {
+	"repository":
+	{
 		"type": "git",
 		"url": "git+https://github.com/dkasperowicz/defaultNpm.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"bugs": {
+	"bugs":
+	{
 		"url": "https://github.com/dkasperowicz/defaultNpm/issues"
 	},
 	"homepage": "https://github.com/dkasperowicz/defaultNpm#readme",
-	"devDependencies": {
+	"devDependencies":
+	{
+		"@types/chai": "^4.2.11",
+		"@types/mocha": "^7.0.2",
 		"@typescript-eslint/eslint-plugin": "^3.5.0",
 		"@typescript-eslint/parser": "^3.5.0",
+		"chai": "^4.2.0",
 		"eslint": "^7.4.0",
-		"typescript": "^3.9.6"
+		"mocha": "^8.0.1",
+		"ts-node": "^8.10.2",
+		"typescript": "^3.9.6",
+		"typings": "^2.1.1"
 	}
 }
